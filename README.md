@@ -1,3 +1,3 @@
-# Welcome to My Personal Website.
+# Welcome to my Github page.
 ## About Me
 
