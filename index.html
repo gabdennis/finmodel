@@ -5,14 +5,33 @@
 </head>
     <style>
         #screen{
-            width:500px;
+            position: relative;
+            width:800px;
             height:500px;
             background-colour: #138108;
         }
+        #scan{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            top: 0;
+            left: 0; 
+        }
+        #content{
+            font-family: "Courier New", "Courier New", monospace;
+            padding: 50px;
+            color: #5eee12;
+            font-size: 30;
+            
     </style>
 <body>
     <div id = "screen">
-        <img src="">
+        <img src="scanlines-fade-1920x1080-4x.png" id="scan">
+        <img src="bezel.png" id="bezel">
+        <div id ="content">
+            
+            
+        </div>
     </div>
 </body>
 </html>
