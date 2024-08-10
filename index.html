@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Gabbie's Blog </title>
+    <title>Gabbie's Blog</title>
     <link rel ="icon" type="image/x.icon" href="favicon.ico">
 </head>
     <style>
-        #scanlines
-        {
+        #myScreen{
+            position: relative;
+            width: 8000px;
+            height: 5000px;
+            background-colour: green;
+
+        }
+        #scanlines, #bezel{
             position: absolute;
             width: 100%;
             height:100%;
@@ -16,7 +22,8 @@
     </style>
 <body>
    <img src="scanlines-fade-1920x1080-4x.png" id="scanline">
-       
+   <img src="bezel.png" id="bezel">
+   
     
 </body>
 </html>
