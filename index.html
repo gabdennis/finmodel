@@ -5,24 +5,37 @@
     <link rel ="icon" type="image/x.icon" href="favicon.ico">
 </head>
     <style>
-        #scanlines{
-            position: absolute;
+        #backg{
+            position: relative;
             width: 8000px;
             height:5000px;
-            top: 0;
-            left: 0; 
+            background-color: rgb( 7, 90, 2 );
+             
         }
+        #scan, 
         #bezel{
             position: absolute;
             width: 100%;
             height:100%;
             top: 0;
             left: 0; 
+            pointer-events: none;
+        }
+        #text{ 
+            font-family: "Courier New", "Courier New", monospace;
+            padding: 50px;
+            color: rgb( 21, 250, 6 );
+            font-size: 50px;
+            text-shadow: 1px 1px 2px rgb(150,167,124), 0 0 1em rgb(150,167,124);
         }
     </style>
 <body>
-   <img src="scanlines-fade-1920x1080-4x.png" id="scanline">
-   <img src="bezel.png" id="bezel">
+    <div id ="backg">
+        <img src="scanlines-fade-1920x1080-4x.png" id="scan" class="noselect"/>
+        <img src="bezel.png" id="bezel" class="noselect"/>
+        <div id="text">Gabbie's Blog</div>
+    </div>
+  
    
     
 </body>
