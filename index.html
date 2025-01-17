@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eliza's portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+    .column.middle {
+      width: 50%;
+    }
+    .column.side {
+      width: 25%;
+    }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px){
+      .column{
+        width: 100%;
+      }
+    }
+    body{
+      cursor: url("greenstar.cur"), auto;
+      background-color: black;
+    }
+    h1 {
+      text-align: left;
+      font-family: "Courier New", monospace;
+      color: white;
+      margin: 0;
+      margin-top: 100px;
+      margin-left: 200px;
+      font-weight: bolder;
+    }
+  p {
+    text-align: left;
+    font-family: "Courier New", monospace;
+    color: white;
+    margin-left: 200px ;
+    font-size: 20px;
+    margin-right: 200px;
+  }
+  h2, h3 {
+    text-align: left;
+    font-family: "Courier New", monospace;
+    color: white;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 200px;
+    font-weight: bolder;
+  }
+  ul{
+    list-style-type: disc;
+    padding-left: 250px;
+    margin: 10px 0;
+  }
+  ul li{
+    margin: 2px;
+    font-size: 20px;
+    color: white;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+  }
+    .cursor {
+      display: inline-block;
+      font-size: inherit;
+      animation: blink 1s step-start infinite;
+      color: white;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    #projects a {
+      color: #b3d4fc;
+      text-decoration: underline;
+    }
+    #connect a {
+      color: #b3d4fc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>hi, i'm eliza<span class="cursor">_</span></h1>
+  <p>I'm a 4th year student majoring in Finance and an aspiring policy analyst. I love reading, star wars, watching football (soccer), fixing broken things, and programming.
+    All my projects are built from scratch and are usually inspired by my mind going into autopilot.
+  </p>
+
+  <section id="projects">
+  <h2>
+    My Projects
+  </h2>
+    <ul>
+      <li>
+        <a href="https://gabdennis.github.io/silver-winner/">Renewable Energy Map</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://github.com/gabdennis/python/blob/523399fee7a16ca61bf85ade3610c957788a8926/Linear%20Regression.md">Linear Regression in Python</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://gabdennis.github.io/stopwatch/">A Web Based Stopwatch</a>
+  </section>
+
+  <section id="connect">
+  <h3> Connect with me </h3>
+    <ul>
+      <li>
+        <a href="https://github.com/gabdennis">Github</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/eliza-gabriella-dennis/">LinkedIn</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="mailto:denniseliza@outlook.com">Email</a>
+      </li>
+    </ul>
+  </section>
+
+  
+</body>
+</html>
